@@ -5,91 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>[blank] — what if music was yours</title>
   <meta name="description" content="[blank] is a local Android music player for people who like to be free. Your library, your device, no strings attached.">
+  <meta property="og:title" content="[blank] — what if music was yours">
+  <meta property="og:description" content="A local Android music player for people who like to be free. Your library, your device, no strings attached.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Crect x='14' y='26' width='6' height='12' fill='%23ffd60a'/%3E%3Crect x='24' y='18' width='6' height='28' fill='%23ffd60a'/%3E%3Crect x='34' y='10' width='6' height='44' fill='%23ffd60a'/%3E%3Crect x='44' y='22' width='6' height='20' fill='%23ffd60a'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="nav">
-    <span class="wordmark">[blank]</span>
-    <a class="github" href="https://github.com/IMX-MAX/-blank-" rel="noopener">GitHub</a>
+    <div class="nav-inner">
+      <a class="wordmark" href="#top">[blank]</a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="https://github.com/IMX-MAX/-blank-" rel="noopener">GitHub</a>
+        <a class="nav-cta" href="https://github.com/IMX-MAX/-blank-#android-app" rel="noopener">Download</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="top">
+
     <section class="hero">
-      <div class="hero-text">
-        <h1>what if music was&nbsp;yours</h1>
-        <p class="sub">
-          [blank] is a local Android music player for people who like to be free.
-          Your library lives on your device. No accounts, no ads, no noise.
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">[blank] for Android</p>
+          <h1>what if music was <em>yours</em></h1>
+          <p class="sub">
+            A local music player for people who like to be free.
+            Your library lives on your device — no accounts, no ads,
+            nothing between you and the record.
+          </p>
+          <div class="cta-row">
+            <a class="btn solid" href="https://github.com/IMX-MAX/-blank-#android-app" rel="noopener">download APK</a>
+            <a class="btn ghost" href="https://github.com/IMX-MAX/-blank-" rel="noopener">view source</a>
+          </div>
+        </div>
+        <div class="hero-shot reveal">
+          <img src="images/1841.png" alt="[blank] home screen showing your library" width="630" height="1400">
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-intro" id="features">
+      <div class="feature-head reveal">
+        <p class="eyebrow">the library</p>
+        <h2>Everything you own,<br>one quiet grid.</h2>
+        <p class="feature-lede">
+          Open the app and you're already home. A grid of covers, your records,
+          nothing else — no tabs to hunt through, no noise in the way.
         </p>
       </div>
-      <div class="hero-shot">
-        <img src="images/1841.png" alt="[blank] home screen showing your library" width="630" height="1400">
+      <div class="duo reveal">
+        <img src="images/1822.png" alt="[blank] library grid of albums" loading="lazy">
+        <img src="images/1839.png" alt="[blank] browsing the collection" loading="lazy">
       </div>
     </section>
 
     <section class="app-section">
-      <div class="section-copy">
-        <h2>Your library, at a glance</h2>
-        <p>Everything you own, laid out as a quiet grid of covers. Open the app and you're already home — no tabs to hunt through, nothing between you and your records.</p>
-      </div>
-      <div class="section-shot">
-        <img src="images/1822.png" alt="[blank] library grid" loading="lazy">
-      </div>
-    </section>
-
-    <section class="app-section flip">
-      <div class="section-copy">
-        <h2>Dig into an album</h2>
-        <p>Tap a cover and the album unfolds — artwork, tracks, and everything you'd want to play. One screen, one record, no distractions.</p>
-      </div>
-      <div class="section-shot">
-        <img src="images/1839.png" alt="[blank] album view" loading="lazy">
-      </div>
-    </section>
-
-    <section class="app-section">
-      <div class="section-copy">
+      <div class="section-copy reveal">
+        <p class="eyebrow">the player</p>
         <h2>Play it your way</h2>
         <p>A pill-shaped bar with a live waveform rides along the bottom wherever you go. Skip, scrub, or sit with a song — the queue is yours to arrange.</p>
       </div>
-      <div class="section-shot">
+      <div class="section-shot reveal">
         <img src="images/1840.png" alt="[blank] now playing with waveform bar" loading="lazy">
       </div>
     </section>
 
     <section class="app-section flip">
-      <div class="section-copy">
-        <h2>Lyrics that keep time</h2>
-        <p>Synced lyrics come from the AMLL TTML database and LRCLIB. Word-perfect highlights when timing exists, plain text when it doesn't — nothing invented.</p>
+      <div class="section-copy reveal">
+        <p class="eyebrow">the lyrics</p>
+        <h2>Words that keep time</h2>
+        <p>Synced lyrics from the AMLL TTML database and LRCLIB. Word-perfect highlights when timing exists, plain text when it doesn't — nothing invented.</p>
       </div>
-      <div class="section-shot">
+      <div class="section-shot reveal">
         <img src="images/1843.png" alt="[blank] synced lyrics view" loading="lazy">
       </div>
     </section>
 
     <section class="app-section">
-      <div class="section-copy">
+      <div class="section-copy reveal">
+        <p class="eyebrow">the freedom</p>
         <h2>Take it offline</h2>
-        <p>Long-press a song or album and make it available offline. Audio, artwork and lyrics are stored on the device, and downloaded songs play with no connection at all.</p>
+        <p>Long-press a song or album and make it available offline. Audio, artwork and lyrics are stored on the device — downloaded songs play with no connection at all.</p>
       </div>
-      <div class="section-shot">
-        <img src="images/1842.png" alt="[blank] offline downloads" loading="lazy">
+      <div class="section-shot reveal">
+        <img src="images/1842.png" alt="[blank] offline downloads and storage settings" loading="lazy">
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="reveal">
+        <h2>find your <em>next repeat</em></h2>
+        <p class="final-sub">Free to have. Free to keep. Free, period.</p>
+        <a class="btn solid" href="https://github.com/IMX-MAX/-blank-#android-app" rel="noopener">download APK</a>
+        <div class="wave" aria-hidden="true">
+          <span class="wave-pill">
+            <span class="bars"></span>
+          </span>
+        </div>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="footer-cta">
-      <h2>find your next repeat</h2>
-      <a class="btn primary" href="https://github.com/IMX-MAX/-blank-#android-app" rel="noopener">download APK</a>
-    </div>
-    <div class="footer-meta">
-      <span>© nathanisreallycool.xyz</span>
+    <div class="footer-inner">
+      <span class="footer-word">[blank]</span>
+      <span class="footer-copy">© nathanisreallycool.xyz</span>
       <a href="https://github.com/IMX-MAX/-blank-" rel="noopener">GitHub</a>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
